@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+NSW:wght@100..400&display=swap');
+
+/* Etapa de la creación: Se crea la animación y se establece cómo se hace. */
+@keyframes animacion-vibrante
+{
+    0% { transform: scale(1.0); }
+    50% { transform: scale(1.5); }
+    100% { transform: scale(1.0); }
+}
+
+
+* {
+
+  
+  
+    box-sizing: border-box;
+}
+
+
+
+h1,body { margin: 0;}
+
+h1
+{
+    font-family: "Playwrite AU NSW", cursive;
+
+    font-size: 40px;
+}
+
+p {
+    width: 70%;
+    margin:auto;
+    font-size: 15 px;
+  
+}
+
+
+
+header {
+
+    background: linear-gradient( #66a375);
+    width: 100%;
+    padding-top: 5px;
+    height: 25vh;
+    color: rgb(24, 22, 22);
+    text-align: center;
+
+}
+
+header a {
+   
+    
+background-color:#416249;
+color: black;
+border: 1px dashed white;
+text-decoration: none;
+text-transform: uppercase;
+display: block;
+width: 100px;
+height: 30px;
+margin: auto;
+line-height: 30px;
+transition: all 3s; /* Acá se define la propiedad en la cual se aplica la transición
+                    (se va a ver reflejado en el :hover).
+                    También se especifica la duración de la transición, es decir, 
+                    cuánto tiempo le lleva a la animación terminarse. */
+
+}
+
+a:hover {
+background-color: black;
+border-color: white;
+color: white;
+
+
+}
+
+body
+{
+
+        /* Fondo degradado */
+        background: linear-gradient(#d1ccac, #416249, #d1ccac);
+
+        
+    background-size: 1700px;
+}
+
+main {
+
+    width: 70%;
+    margin:auto;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    
+}
+
+img {
+    width: 100%;
+    box-shadow: 5px 5px 10 px rgba(0, 0, 0, 0.5);
+}
+video { width: 50%;
+    display: block;
+    margin: 10px auto;
+    border-radius: 40 px
+}
+
+div {
+   
+    width: 30%;
+    margin-top: 20px;
+
+}
+
+img { width: 100%;
+      border-radius: 10px; }
+
+footer {
+    
+   
+    width: 100%;
+    padding-top: 45px;
+    height: 20vh;
+    color: rgb(24, 22, 22);
+    text-align: center;
+    
+   
+}
+
+#texto-final
+{
+    animation-name: animacion-vibrante;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
